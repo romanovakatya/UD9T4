@@ -7,9 +7,9 @@ public class Raices {
 	protected double b;
 	protected double c;
 	protected double discriminante;
-	double raizCuadrada;
-	double raiz1;
-	double raiz2;
+	protected double raizCuadrada;
+	protected double raiz1;
+	protected double raiz2;
 
 	// constructor con atributos,
 	public Raices(double a, double b, double c) {
@@ -26,14 +26,14 @@ public class Raices {
 
 		// en el caso cuando a es igual a zero y b es igual a b,
 		// no hay ningúna ecuación,
-		if (a == 0 && b == 0) {
+		if (this.a == 0 && this.b == 0) {
 
 			return -1;
 		}
 		// en otros casos calculamos el discriminante,
 		else {
 
-			return Math.pow(b, 2) - (4 * a * c);
+			return Math.pow(this.b, 2) - (4 * this.a * this.c);
 		}
 	}
 
